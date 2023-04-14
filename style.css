@@ -1,0 +1,492 @@
+@import url("./fonts/armingrotesk-black-webfont.woff2");
+
+.carma{
+    background-image: url("https://carma.com.au/images/components/HeroBanner/background.jpg");
+    height: 875px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-section{
+    padding:0;
+}
+
+.navbar{
+    padding:0;
+    border: 1px solid;
+}
+
+.carma_logo{
+    width: 110px;
+    margin-top: 24px;
+    margin-left: 31px;
+}
+.img-div {
+    border-right: 1px solid rgba(53,50,68,1);
+    height: 88px;
+    width: 173px;
+}
+
+span{
+    color: white;
+    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.left-part{
+    padding: 22px 32px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: -46px;
+}
+
+.right-part{
+    padding: 22px 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bi-heart{
+    color: white;
+}
+
+.btn-link{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 7px 8px;
+}
+
+.btn-link:hover {
+    background: #ffffff;
+    color: blue;
+}
+
+.div{
+    display: flex;
+    gap: 50px;
+}
+
+.text-content {
+    width: 680px;
+}
+
+.text-content > h1 {
+    color: #f8f7fd;
+    font-size: 4.75rem;
+    font-weight: 900;
+}
+
+/*hr {*/
+/*    border: none;*/
+/*    border-top: 3px solid #333;*/
+/*    color: #333;*/
+/*    overflow: visible;*/
+/*    text-align: center;*/
+/*    height: 5px;*/
+/*}*/
+
+/*hr:after {*/
+/*    background: #fff;*/
+/*    content: 'or';*/
+/*    padding: 0 4px;*/
+/*    position: relative;*/
+/*    top: -13px;*/
+/*}*/
+
+.search-inp{
+    border: none;
+    width: 41%;
+    height: 64px;
+    margin-top: 1%;
+    padding: 6px 15px;
+    border-radius: 7px;
+}
+
+.bi-search{
+    position: relative;
+    color: #332E69;
+    right: 45px;
+}
+
+.btn-primary{
+    width: 41%;
+    height: 72px;
+    background-color: #E83657;
+    border-radius: 7px;
+    font-size: 23px;
+    border: none;
+    font-weight: 700;
+    font-family: "ArminGrotesk","Adjusted Fallback Font",sans-serif;
+}
+
+.btn-primary:hover{
+    background-color: #b0002e;
+}
+
+.bi-star, .shield-check, .car-logo{
+    width: 64px;
+    height: 64px;
+}
+
+.hero-footer{
+    height: 112px;
+    background-color: rgba(16,4,28,.55);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-part1 > div > p{
+    margin: 0;
+    color: #F8F7FD;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-section > div > h4{
+    text-align: center;
+    color: #5E586D;
+    font-size: 44px;
+    padding: 72px 0 0;
+    font-weight: 700;
+    font-family: "ArminGrotesk","Adjusted Fallback Font",sans-serif;
+}
+
+.footer-section > div > p {
+    text-align: center;
+    color: #5E5895;
+    font-size: 17px;
+}
+
+.info-part{
+    display: flex;
+    padding: 84px 0;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 11%;
+}
+
+.part-1,
+.part-2,
+.part-3,
+.part-4,
+.part-5{
+    display: flex;
+    flex-direction: column;
+}
+
+.part-1 > span{
+    color: #332E69;
+    font-size: 20px;
+    margin: 0 0 16px;
+    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif;
+}
+
+.part-2 > span{
+    color: #332E69;
+    font-size: 20px;
+    margin: 0 0 16px;
+    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif;
+}
+
+.part-3 > span{
+    color: #332E69;
+    font-size: 20px;
+    margin: 0 0 16px;
+    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif
+}
+
+.part-4 > span{
+    color: #332E69;
+    font-size: 20px;
+    margin: 0 0 16px;
+    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif
+}
+
+.part-5 > span{
+    color: #332E69;
+    font-size: 20px;
+    margin: 0 0 16px;
+    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif
+}
+
+h6{
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    padding:84px 12px 24px;
+    max-width: 67.25rem;
+    margin: auto;
+    text-align: center;
+}
+
+.description > span{
+    color: rgba(21,13,44,.702);
+    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 15px;
+    margin: 0 0 16px;
+}
+
+.privacy:before {
+    content: "•";
+    color: black;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+
+.footer-info > div >a{
+    color: rgba(13,110,253);
+    opacity: 0.2;
+    text-decoration: none;
+}
+
+.Footer_christmasEgg__2S-4w{
+    margin-left: 30px;
+}
+
+.Footer_christmasEgg__2S-4w:hover{
+    opacity: 1;
+}
+
+.footer-info{
+    display: flex;
+    padding-bottom: 25px;
+    gap: 34%;
+}
+
+.text{
+    display: flex;
+    gap: 16px;
+}
+
+.text > span{
+    font-family: "ArminGrotesk","Adjusted Fallback Font",sans-serif;
+    color: rgba(21,13,44,.702);
+    font-size: 15px;
+}
+
+.bold, .privacy {
+    font-weight: 700;
+}
+
+.email-icon, .phone-icon, .message-icon{
+    width: 40px;
+    color: #332E69 !important;
+}
+
+.info-text > p{
+    font-size: 20px;
+    color: #332E69;
+    font-weight: 800;
+    margin: 0;
+}
+
+.info-div {
+    display: flex;
+    background-color: #F8FbFE;
+    width: 430px;
+    padding: 16px;
+    height: 88px;
+    gap: 25px;
+    border-radius: 7px;
+}
+
+.info-div:hover{
+    background-color: #ebf2f5;
+}
+
+.hide-part:hover{
+    background: white;
+    border-radius: 50px;
+    height: 41px;
+    width: 46px;
+    text-align: center;
+}
+
+.info-text > a {
+    font-size: 17px;
+    text-decoration: underline !important;
+    color: #332E69 !important;
+    font-weight: 800;
+}
+
+.info{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 1%;
+}
+
+.hero-part1{
+    display: flex;
+}
+
+.user-hide-div{
+    text-align: center;
+    background: white;
+    border-radius: 50px;
+    width: 28px;
+    height: 27px;
+    color: black;
+}
+
+.icons{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.Divider_root__3mXcA {
+    position: relative;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    width: 41%;
+}
+
+.Divider_content__10RuK:before {
+    right: -webkit-calc(100% + 0.5rem);
+    right: -moz-calc(100% + .5rem);
+    right: calc(100% + 0.5rem);
+}
+
+.Divider_content__10RuK:after, .Divider_content__10RuK:before {
+    content: "";
+    position: absolute;
+    top: -webkit-calc(50% - -0.0625rem);
+    top: -moz-calc(50% - -.0625rem);
+    top: calc(50% - -0.0625rem);
+    width: 50vw;
+    border-top: 0.0625rem solid #9e9dcf;
+    opacity: .6;
+}
+
+.Divider_content__10RuK {
+    position: relative;
+    font-size: .9375rem;
+    line-height: 1.3333333333;
+    font-weight: 400;
+    color: white;
+}
+
+.Divider_content__10RuK:after {
+    left: -webkit-calc(100% + 0.5rem);
+    left: -moz-calc(100% + .5rem);
+    left: calc(100% + 0.5rem);
+}
+
+.Divider_content__10RuK:after, .Divider_content__10RuK:before {
+    content: "";
+    position: absolute;
+    top: -webkit-calc(50% - -0.0625rem);
+    top: -moz-calc(50% - -.0625rem);
+    top: calc(50% - -0.0625rem);
+    width: 50vw;
+    border-top: 0.0625rem solid #9e9dcf;
+    opacity: .6;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 147px;
+}
+
+.middle-part{
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 1560px) {
+    .middle-part{
+        margin-left: 75px;
+    }
+
+    .text-content > h1{
+        font-size: 55px;
+    }
+
+    .bi-star, .shield-check, .car-logo{
+        width: 40px;
+        margin-top: -6px;
+    }
+
+    .search-inp, .btn-primary, .Divider_root__3mXcA{
+        width: 36%;
+    }
+
+    .hero-part1 > div > p{
+        font-size: 17px;
+    }
+
+    .hero-footer{
+        padding: 30px;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    .middle-part{
+        margin-left: 38px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .left-part{
+        display: none;
+    }
+
+    .text-content{
+        width: 100%;
+    }
+
+    .text-content > h1{
+        font-size: 52px;
+    }
+
+    .search-inp, .btn-primary, .Divider_root__3mXcA{
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+  .hero-footer{
+      flex-direction: row;
+  }
+}
+
