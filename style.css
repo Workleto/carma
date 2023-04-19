@@ -1,41 +1,43 @@
 @import url("./fonts/armingrotesk-black-webfont.woff2");
 
-.carma{
-    background-image: url("https://carma.com.au/images/components/HeroBanner/background.jpg");
-    height: 875px;
-    background-position: center;
+
+.carma {
+    background-image: linear-gradient(90deg, transparent 95%, #050416), url("https://carma.com.au/images/components/HeroBanner/background.jpg");
+    background-size: auto max(115%, min(64vw, 141%));
+    background-position: top 25% right calc(max(0rem, (100vw - 120rem) / 2) - 1px), top 25% right max(0rem, (100vw - 120rem) / 2);
+    height: auto;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.navbar-section{
-    padding:0;
+.navbar-dark {
+    height: 86px;
+    padding: 0 !important;
 }
 
-.navbar{
-    padding:0;
-    border: 1px solid;
+.navbar {
+    border: 1px solid rgba(53, 50, 68, 1) !important;
 }
 
-.carma_logo{
+.carma_logo {
     width: 110px;
     margin-top: 24px;
     margin-left: 31px;
 }
+
 .img-div {
-    border-right: 1px solid rgba(53,50,68,1);
-    height: 88px;
+    border-right: 1px solid rgba(53, 50, 68, 1);
+    height: 85px;
     width: 173px;
+    text-align: center;
 }
 
-span{
-    color: white;
-    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif;
+span {
+    font-family: ArminGrotesk, Adjusted Fallback Font, sans-serif;
     font-size: 17px;
     font-weight: 400;
 }
 
-.left-part{
+.left-part {
     padding: 22px 32px;
     display: flex;
     gap: 30px;
@@ -43,31 +45,31 @@ span{
     margin-left: -46px;
 }
 
-.right-part{
+.right-part {
     padding: 22px 32px;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.bi-heart{
+.bi-heart {
     color: white;
 }
 
-.btn-link{
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    border-radius: 50px;
-    padding: 7px 8px;
+.btn-link {
+    text-decoration: none !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 50px !important;
+    padding: 7px 8px !important;
 }
 
 .btn-link:hover {
-    background: #ffffff;
-    color: blue;
+    background: #ffffff !important;
+    color: blue !important;
 }
 
-.div{
+.div {
     display: flex;
     gap: 50px;
 }
@@ -82,24 +84,7 @@ span{
     font-weight: 900;
 }
 
-/*hr {*/
-/*    border: none;*/
-/*    border-top: 3px solid #333;*/
-/*    color: #333;*/
-/*    overflow: visible;*/
-/*    text-align: center;*/
-/*    height: 5px;*/
-/*}*/
-
-/*hr:after {*/
-/*    background: #fff;*/
-/*    content: 'or';*/
-/*    padding: 0 4px;*/
-/*    position: relative;*/
-/*    top: -13px;*/
-/*}*/
-
-.search-inp{
+.search-inp {
     border: none;
     width: 41%;
     height: 64px;
@@ -108,54 +93,54 @@ span{
     border-radius: 7px;
 }
 
-.bi-search{
+.bi-search {
     position: relative;
     color: #332E69;
     right: 45px;
 }
 
-.btn-primary{
+.btn-primary {
     width: 41%;
     height: 72px;
-    background-color: #E83657;
+    background-color: #E21C2A !important;
     border-radius: 7px;
     font-size: 23px;
-    border: none;
+    border: none !important;
     font-weight: 700;
-    font-family: "ArminGrotesk","Adjusted Fallback Font",sans-serif;
+    font-family: "ArminGrotesk", "Adjusted Fallback Font", sans-serif;
 }
 
-.btn-primary:hover{
-    background-color: #b0002e;
+.btn-primary:hover {
+    background-color: #b0002e !important;
 }
 
-.bi-star, .shield-check, .car-logo{
+.bi-star, .shield-check, .car-logo {
     width: 64px;
     height: 64px;
 }
 
-.hero-footer{
+.hero-footer {
     height: 112px;
-    background-color: rgba(16,4,28,.55);
+    background-color: rgba(16, 4, 28, .55);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.hero-part1 > div > p{
+.hero-part1 > div > p {
     margin: 0;
     color: #F8F7FD;
     font-size: 20px;
     font-weight: 700;
 }
 
-.footer-section > div > h4{
+.footer-section > div > h4 {
     text-align: center;
     color: #5E586D;
     font-size: 44px;
     padding: 72px 0 0;
     font-weight: 700;
-    font-family: "ArminGrotesk","Adjusted Fallback Font",sans-serif;
+    font-family: "ArminGrotesk", "Adjusted Fallback Font", sans-serif;
 }
 
 .footer-section > div > p {
@@ -164,78 +149,80 @@ span{
     font-size: 17px;
 }
 
-.info-part{
-    display: flex;
-    padding: 84px 0;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-    column-gap: 11%;
+.info-part {
+    display: grid;
+    line-height: 1.4;
+    column-gap: 1.25rem;
+    grid-row-gap: 3rem;
+    grid-gap: 9%;
+    grid-template-columns: repeat(auto-fill, 150px);
+    padding: 5% 7%;
+    row-gap: 3rem;
 }
 
 .part-1,
 .part-2,
 .part-3,
 .part-4,
-.part-5{
+.part-5 {
     display: flex;
     flex-direction: column;
 }
 
-.part-1 > span{
-    color: #332E69;
+.part-1 > span {
+    color: #0058A0;
     font-size: 20px;
     margin: 0 0 16px;
-    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif;
+    font-family: ArminGrotesk, Adjusted Fallback Font, sans-serif;
 }
 
-.part-2 > span{
-    color: #332E69;
+.part-2 > span {
+    color: #0058A0;
     font-size: 20px;
     margin: 0 0 16px;
-    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif;
+    font-family: ArminGrotesk, Adjusted Fallback Font, sans-serif;
 }
 
-.part-3 > span{
-    color: #332E69;
+.part-3 > span {
+    color: #0058A0;
     font-size: 20px;
     margin: 0 0 16px;
-    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif
+    font-family: ArminGrotesk, Adjusted Fallback Font, sans-serif
 }
 
-.part-4 > span{
-    color: #332E69;
+.part-4 > span {
+    color: #0058A0;
     font-size: 20px;
     margin: 0 0 16px;
-    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif
+    font-family: ArminGrotesk, Adjusted Fallback Font, sans-serif
 }
 
-.part-5 > span{
-    color: #332E69;
+.part-5 > span {
+    color: #0058A0;
     font-size: 20px;
     margin: 0 0 16px;
-    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif
+    font-family: ArminGrotesk, Adjusted Fallback Font, sans-serif
 }
 
-h6{
+h6 {
     padding-bottom: 10px;
     font-size: 12px;
     font-weight: 800;
-    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif
+    font-family: ArminGrotesk, Adjusted Fallback Font, sans-serif
 }
 
-.description{
+.description {
     display: flex;
     flex-direction: column;
-    padding:84px 12px 24px;
+    padding: 84px 32px 24px;
     max-width: 67.25rem;
     margin: auto;
     text-align: center;
 }
 
-.description > span{
-    color: rgba(21,13,44,.702);
-    font-family: ArminGrotesk,Adjusted Fallback Font,sans-serif;
+.description > span {
+    color: rgba(21, 13, 44, .702);
+    font-family: ArminGrotesk, Adjusted Fallback Font, sans-serif;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0;
@@ -250,34 +237,41 @@ h6{
     display: inline-block;
 }
 
-.footer-info > div >a{
-    color: rgba(13,110,253);
+.footer-info > div > a {
+    color: rgba(13, 110, 253);
     opacity: 0.2;
     text-decoration: none;
 }
 
-.Footer_christmasEgg__2S-4w{
+.Footer_christmasEgg__2S-4w {
     margin-left: 30px;
 }
 
-.Footer_christmasEgg__2S-4w:hover{
+.Footer_christmasEgg__2S-4w:hover {
     opacity: 1;
 }
 
-.footer-info{
+.footer-info {
     display: flex;
     padding-bottom: 25px;
     gap: 34%;
 }
 
-.text{
+.text {
     display: flex;
     gap: 16px;
 }
 
-.text > span{
-    font-family: "ArminGrotesk","Adjusted Fallback Font",sans-serif;
-    color: rgba(21,13,44,.702);
+.footer-info > div > span {
+    font-family: "ArminGrotesk", "Adjusted Fallback Font", sans-serif;
+    color: rgba(21, 13, 44, .702);
+    font-size: 15px;
+}
+
+
+.text > div > span {
+    font-family: "ArminGrotesk", "Adjusted Fallback Font", sans-serif;
+    color: rgba(21, 13, 44, .702);
     font-size: 15px;
 }
 
@@ -285,14 +279,14 @@ h6{
     font-weight: 700;
 }
 
-.email-icon, .phone-icon, .message-icon{
+.email-icon, .phone-icon, .message-icon {
     width: 40px;
     color: #332E69 !important;
 }
 
-.info-text > p{
+.info-text > p {
     font-size: 20px;
-    color: #332E69;
+    color: #0058A0;
     font-weight: 800;
     margin: 0;
 }
@@ -300,18 +294,18 @@ h6{
 .info-div {
     display: flex;
     background-color: #F8FbFE;
-    width: 430px;
+    width: 100%;
     padding: 16px;
     height: 88px;
-    gap: 25px;
+    gap: 6%;
     border-radius: 7px;
 }
 
-.info-div:hover{
+.info-div:hover {
     background-color: #ebf2f5;
 }
 
-.hide-part:hover{
+.hide-part:hover {
     background: white;
     border-radius: 50px;
     height: 41px;
@@ -322,22 +316,23 @@ h6{
 .info-text > a {
     font-size: 17px;
     text-decoration: underline !important;
-    color: #332E69 !important;
+    color: #0058A0 !important;
     font-weight: 800;
 }
 
-.info{
+.info {
     display: flex;
     margin-top: 30px;
     justify-content: center;
-    gap: 1%;
+    gap: 4%;
+    padding: 0 131px;
 }
 
-.hero-part1{
+.hero-part1 {
     display: flex;
 }
 
-.user-hide-div{
+.user-hide-div {
     text-align: center;
     background: white;
     border-radius: 50px;
@@ -346,7 +341,7 @@ h6{
     color: black;
 }
 
-.icons{
+.icons {
     display: flex;
     gap: 9px;
     align-items: center;
@@ -421,72 +416,336 @@ h6{
     opacity: .6;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: column;
     row-gap: 147px;
 }
 
-.middle-part{
+.middle-part {
     margin-left: 10%;
+    margin-top: 10%;
 }
 
+.hide-search-icon {
+    display: none;
+}
+
+.offcanvas-content {
+    display: none;
+}
+
+
 @media screen and (max-width: 1560px) {
-    .middle-part{
+    .middle-part {
         margin-left: 75px;
     }
 
-    .text-content > h1{
+    .text-content > h1 {
         font-size: 55px;
     }
 
-    .bi-star, .shield-check, .car-logo{
+    .bi-star, .shield-check, .car-logo {
         width: 40px;
         margin-top: -6px;
     }
 
-    .search-inp, .btn-primary, .Divider_root__3mXcA{
+    .search-inp, .btn-primary, .Divider_root__3mXcA {
         width: 36%;
     }
 
-    .hero-part1 > div > p{
+    .hero-part1 > div > p {
         font-size: 17px;
     }
 
-    .hero-footer{
+    .hero-footer {
         padding: 30px;
         gap: 20px;
+        margin-top: 52px;
+    }
+
+    .hero-part1 {
+        gap: 10px;
+    }
+
+    .footer-section > div > h4 {
+        font-size: 32px;
     }
 
 }
 
 @media screen and (max-width: 1440px) {
-    .middle-part{
+    .middle-part {
         margin-left: 38px;
+    }
+
+    .hide-search-icon {
+        display: block;
     }
 }
 
 @media screen and (max-width: 960px) {
-    .left-part{
+    .left-part {
         display: none;
     }
 
-    .text-content{
+    .offcanvas-content {
+        display: block;
+    }
+
+    .text-content {
         width: 100%;
     }
 
-    .text-content > h1{
+    .text-content > h1 {
         font-size: 52px;
     }
 
-    .search-inp, .btn-primary, .Divider_root__3mXcA{
-        width: 97%;
+    .search-inp, .btn-primary, .Divider_root__3mXcA {
+        width: 94%;
+    }
+
+    .hero-footer {
+        margin-top: 62px;
+    }
+
+    .info {
+        flex-direction: column;
+        padding: 0 32px 56px;
+    }
+
+    .footer-info {
+        gap: 25%;
+    }
+
+    .hr {
+        display: none;
+    }
+
+    .description {
+        padding: 0 32px 24px;
+    }
+
+    .carma {
+        grid-gap: 5rem;
+        gap: 5rem;
+        height: 41.25rem;
+        background-image: url("https://carma.com.au/images/components/HeroBanner/background.jpg");
+        background-size: auto 122%;
+        background-position: top -16px right;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 41px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero-footer {
+        background-color: #0A0418;
     }
 }
 
 @media screen and (max-width: 580px) {
-  .hero-footer{
-      flex-direction: row;
-  }
+    .hero-footer {
+        flex-direction: column;
+    }
+
+    .carma {
+        height: auto;
+    }
+
+    .hero-footer {
+        height: 100%;
+        margin-top: -146px;
+        align-items: baseline;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        padding: 0 7%;
+    }
+
+    .description {
+        text-align: start;
+    }
+
+    .carma {
+        grid-gap: 0;
+        gap: 0;
+        height: 58.25rem;
+        background-size: auto max(63%, min(108vw, 109%));
+        background-position: top max(-134px, min((100vw - 580px) * -134 / 379 + 0px, 0px)) right;
+    }
+
 }
 
+@media screen and (max-width: 385px) {
+    .info-part {
+        grid-template-columns: repeat(auto-fill, 44%);
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .bi-search {
+        top: 134%;
+        position: absolute;
+        right: 31px;
+    }
+}
+
+@media screen and (max-width: 307px) {
+    .text {
+        flex-direction: column;
+    }
+}
+
+.img-div > img {
+    width: 136px;
+    margin-top: 22px;
+    margin-left: 13px;
+    height: 43px;
+}
+
+.bi-star > path, .shield-check > path, .car-logo > path {
+    fill: #E21C2A;
+}
+
+.bi-search > path, .email-icon > path, .phone-icon > path, .message-icon > path {
+    fill: #0058A0;
+}
+
+.offcanvas {
+    width: 100% !important;
+    border: none !important;
+}
+
+.offcanvas > img {
+    width: 30%;
+}
+
+.offcanvas-body > button {
+    display: flex;
+    justify-content: space-between;
+    text-transform: none;
+    font-style: normal;
+    font-weight: 600;
+    padding: 16px;
+    font-size: 1.0625rem;
+    line-height: 1.4117647059;
+    border-radius: 0.5rem;
+    width: 100%;
+    box-shadow: none;
+    color: #fff;
+    background-color: #0058A0;
+    border: none;
+}
+
+.offcanvas-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+}
+
+.offcanvas-text > span {
+    padding: 11px 0 13px 16px;
+    margin: 0 0 8px;
+    color: #0058A0;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.dropdown-menu.show {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 41%;
+    margin: 0;
+    height: 350px;
+    transform: translate(0px, 2px);
+}
+
+.dropdown-menu.show {
+    padding: 24px;
+}
+
+.search-inp:focus {
+    border: 4px #0058A0 solid;
+}
+
+.dropdown-menu > p {
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(21, 13, 44, .380392);
+    font-size: .75rem;
+    line-height: 1.3333333333;
+}
+
+.dropdown-menu > button {
+    width: 100%;
+    background-color: #332e69;
+    padding: 0.6875rem;
+    margin: 0;
+    border: 0;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: .9375rem;
+    line-height: 1.2;
+}
+
+.dropdown-parts {
+    padding: 10px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.dropdown-part {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 0.0625rem solid #ebf2f5;
+}
+
+.dropdown-part > img {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.model {
+    font-weight: 700;
+    color: rgba(21, 13, 44, .878431);
+    font-size: .75rem;
+    line-height: 1.1666666667;
+}
+
+.dropdown-part > p {
+    padding: 8px 0;
+    font-size: 11px;
+    margin: 0;
+}
+
+.dropdown-part > div > p {
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+}
+
+.km {
+    font-weight: 400;
+    color: rgba(21, 13, 44, .380392);
+    font-size: .75rem;
+    line-height: 1.3333333333;
+    margin-bottom: 0.25rem;
+}
+
+.price {
+    font-weight: 800;
+    color: rgba(21, 13, 44, .878431);
+    font-size: .875rem;
+    line-height: 1.2857142857;
+}

@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"-->
+    <!--          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">-->
     <link rel="stylesheet" href="style.css">
     <link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <title>Carma</title>
 </head>
 <body>
 <div class="carma">
+    <div class="offcanvas-content">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <img src="logo.jpg"/>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <button>Login or create an account
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="M12.3999 3.39999H16.9999C18.4359 3.39999 19.5999 4.56405 19.5999 5.99999V18C19.5999 19.4359 18.4359 20.6 16.9999 20.6H12.3999V19.4H16.9999C17.7731 19.4 18.3999 18.7732 18.3999 18V5.99999C18.3999 5.2268 17.7731 4.59999 16.9999 4.59999H12.3999V3.39999Z"></path>
+                        <path d="M8.50015 7.15147L4.07588 11.5757C3.84157 11.8101 3.84157 12.19 4.07588 12.4243L8.50015 16.8485L9.34867 16L5.94867 12.6H16.0999V11.4H5.94868L9.34867 8L8.50015 7.15147Z"></path>
+                    </svg>
+                </button>
+                <div class="offcanvas-text">
+                    <span>Browse cars</span>
+                    <span>Sell or trade in</span>
+                    <span>How it works</span>
+                    <span>Car finance</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="header">
         <div class="navbar-section">
             <nav class="navbar navbar-dark">
                 <div class="div">
                     <div class="img-div">
-                        <svg class="carma_logo" focusable="false" viewBox="0 0 99 33"
-                             aria-hidden="true">
-                            <path
-                                    d="m98.985 10.228-5.18 1.107c-.251.063-.508.101-.767.113-.61 0-.95-.355-1.019-1.065V0h-.017l-3.541.763v1.916l-.151.032a3.44 3.44 0 0 0-3.073-1.546 7.479 7.479 0 0 0-1.322.153 8.061 8.061 0 0 0-2.303.852l-.127.075a8.048 8.048 0 0 0-2.482 2.343 10.407 10.407 0 0 0-1.635 7.938c.127.622.335 1.224.618 1.791l.17.333-2.486.568c-.25.063-.506.1-.764.111-.67 0-1.002-.368-1.02-1.216V9.086a11.354 11.354 0 0 0-.212-2.068c-.302-1.423-1.134-2.317-2.377-2.586l-.115-.02a3.953 3.953 0 0 0-.726-.063c-.38.003-.759.045-1.13.126-.194.043-.39.094-.583.153-.726.18-2.65.876-4.47 3.449-.387-.965-1.025-1.545-1.944-1.743a3.763 3.763 0 0 0-.804-.08c-.43.005-.859.055-1.278.149a7.686 7.686 0 0 0-2.16.788 1.82 1.82 0 0 0-.128.074 4.734 4.734 0 0 0-2.092 2.37l-.185.041V7.76l-3.554.756V20.23l-8.44 1.804v-5.906c.425-1.87 1.49-2.957 3.215-3.327.32-.07.647-.107.975-.11a3.46 3.46 0 0 1 .953.127l-.023-3.647v-.05a1.868 1.868 0 0 0-.57-.077 3.9 3.9 0 0 0-.811.096 5.448 5.448 0 0 0-1.77.702l-.107.069a4.444 4.444 0 0 0-1.775 2.274l-.239.051v-1.895l-3.498.745-.056.01-2.083.446.049 3.042 2.034-.426v8.664l-3.556.76c-.25.063-.506.101-.764.113-.67 0-1.017-.425-1.032-1.277V12.242l-1.18.247-2.315.494-.083.017v1.917l-.16.032-.235-.285c-.639-.852-1.584-1.266-2.814-1.263a6.266 6.266 0 0 0-1.322.153 7.759 7.759 0 0 0-4.912 3.267c-.218.319-.419.65-.6.99-.038.07-.076.145-.115.214l-.031.07a9.98 9.98 0 0 0-.507 1.223l-.172.443c-1.39 4.36-2.695 5.616-3.914 6.76-5.646 5.26-11.465 2.59-12.314-1.53-.653-3.181.226-5.473 1.585-7.422 1.277-1.826 3.001-2.959 5.304-3.449a9.051 9.051 0 0 1 1.886-.196c.268 0 .546 0 .832.03l.257.02.092 3.252 2.862-.61v-5.484c-.585-.302-1.477-.48-2.656-.526a13.847 13.847 0 0 0-3.84.268c-3.274.699-5.91 2.305-7.833 4.774-2.188 2.854-3.007 6.8-2.05 10.607 1.403 5.572 6.245 6.562 8.007 6.664 4.712.275 8.394-2.63 8.394-2.63 1.176-.927 2.166-1.747 3.694-3.907l.234.4c.851 1.462 2.233 2.233 4.029 2.23a7.023 7.023 0 0 0 1.034-.08l.062-.01c1.151-.141 3.882-.45 5.874-3.334.585.937 1.466 1.4 2.696 1.4.249-.003.497-.021.743-.054l20.66-4.402v-9.178c.486-1.743 1.595-2.955 2.997-3.253.205-.045.414-.07.624-.072.88 0 1.428.473 1.628 1.406.065.33.108.663.127.998v8.946l3.703-.788v-9.207c.411-1.592 1.599-2.923 2.89-3.195.217-.048.439-.073.66-.075.886 0 1.454.46 1.64 1.338.065.429.095.863.09 1.297v3.898a7.896 7.896 0 0 0 .13 1.874c.292 1.378 1.39 2.162 2.893 2.162.383-.006.765-.05 1.14-.13.213-.028 8.958-1.885 8.958-1.885 1.639-.37 4.207-.746 5.823-3.31.583.929 1.462 1.386 2.688 1.384a5.978 5.978 0 0 0 1.121-.121L99 13.327l-.015-3.1Zm-68.077 12.1c-.598 1.866-1.886 3.172-3.503 3.514-.28.062-.565.095-.852.098-1.504 0-2.539-.965-2.915-2.724-.322-1.51-.037-3.052.85-4.58a4.595 4.595 0 0 1 3.855-2.223c1.151 0 2.011.529 2.554 1.578l.01 4.337Zm57.408-12.309c-.59 1.902-1.888 3.233-3.524 3.58-.28.062-.565.095-.852.099-1.506 0-2.54-.965-2.915-2.725-.322-1.51-.038-3.052.851-4.579a4.506 4.506 0 0 1 2.958-2.13c.299-.066.603-.1.909-.102 1.164 0 2.03.539 2.584 1.61l-.011 4.247Z"
-                                    fill="#E83657"></path>
-                        </svg>
+                        <img src="logo.jpg" alt=""/>
                     </div>
                     <div class="left-part">
                         <span>Find your car</span>
@@ -31,6 +53,11 @@
                     </div>
                 </div>
                 <div class="right-part">
+                    <svg class="hide-search-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                         style="color: rgb(255, 255, 255);">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14.5074 15.3559C13.2896 16.3818 11.717 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 11.717 16.3818 13.2896 15.3559 14.5074L20.8485 20L19.9999 20.8485L14.5074 15.3559ZM15.8 10C15.8 13.2033 13.2033 15.8 10 15.8C6.79675 15.8 4.2 13.2033 4.2 10C4.2 6.79675 6.79675 4.2 10 4.2C13.2033 4.2 15.8 6.79675 15.8 10Z"></path>
+                    </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          class="bi bi-heart"
                          viewBox="0 0 16 16">
@@ -38,7 +65,9 @@
                     </svg>
                     <button type="button" class="btn btn-link">
                         <div class="icons">
-                            <svg class="MuiSvgIcon-root AccountButton_iconMenu__17K2o AccountButton_transparent__Na5o0"
+                            <svg data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                 aria-controls="offcanvasRight"
+                                 class="MuiSvgIcon-root AccountButton_iconMenu__17K2o AccountButton_transparent__Na5o0"
                                  focusable="false" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M4.3999 7.40002H19.5999V8.60002H4.3999V7.40002Z"></path>
                                 <path d="M4.3999 11.4H19.5999V12.6H4.3999V11.4Z"></path>
@@ -61,15 +90,49 @@
             </nav>
         </div>
         <div class="middle-part">
-        <div class="text-content">
-            <h1 class="HeroBanner_heading__1lm37" data-testid="HERO_BANNER_TITLE">Find the car that's searching for
-                you.</h1>
-        </div>
-            <input class="search-inp" type="text" placeholder="Search makes, models, body ..."/>
+            <div class="text-content">
+                <h1 class="HeroBanner_heading__1lm37" data-testid="HERO_BANNER_TITLE">Find the car that's searching for
+                    you.</h1>
+            </div>
+            <input class="search-inp dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                   aria-expanded="false" type="text" placeholder="Search makes, models, body ..."/>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
                  viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
             </svg>
+            <div class="dropdown">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <p>CARS JUST ADDED</p>
+                    <div class="dropdown-parts">
+                        <div class="dropdown-part">
+                            <img src="https://img.carma.com.au/440386/360doorsclosed/440386_XC_02_230419_0443.jpg"/>
+                            <div>
+                                <p class="model">2016 HOLDEN COMMODORE</p>
+                                <p class="km">79,695 km</p>
+                            </div>
+                            <p class="price">$24,990</p>
+                        </div>
+                        <div class="dropdown-part">
+                            <img src="https://img.carma.com.au/891376/360doorsclosed/891376_XC_02_230419_0422.jpg"/>
+                            <div>
+                                <p class="model">2016 HOLDEN COMMODORE</p>
+                                <p class="km">79,695 km</p>
+                            </div>
+                            <p class="price">$24,990</p>
+                        </div>
+                        <div class="dropdown-part">
+                            <img src="https://img.carma.com.au/296290/360doorsclosed/296290_XC_02_230419_0432.jpg"/>
+                            <div>
+                                <p class="model">2016 HOLDEN COMMODORE</p>
+                                <p class="km">79,695 km</p>
+                            </div>
+                            <p class="price">$24,990</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <button>View all cars</button>
+                </div>
+            </div>
             <div class="Divider_root__3mXcA" role="separator">
                 <div class="Divider_content__10RuK">or</div>
             </div>
@@ -120,6 +183,7 @@
         </div>
     </div>
 </div>
+
 <div class="footer-section">
     <div>
         <h4>Need support? We're here to help.</h4>
@@ -206,7 +270,7 @@
             <span>Instagram</span>
         </div>
     </div>
-    <hr/>
+    <hr class="hr"/>
     <div class="description">
         <span>^Estimated repayment based on an average rate calculated across all fixed P&I used car loans offered by Carma preferred financiers to eligible applicants purchasing a vehicle aged 0-7 years from build date. The rate does not reflect any particular product or your situation and does not imply credit is available to you at this rate. Final rate and all applications subject to financier approval. Fees and charges apply. The direct debit frequency options available from financiers may differ.</span>
         <span>*within Greater Sydney</span>
@@ -217,12 +281,38 @@
             <a class="Footer_christmasEgg__2S-4w" rel="nofollow" title="Claude's Secret Elves"
                href="/claudes-secret/merry-christmas">🎁</a>
         </div>
-        <div class="text">
+        <div>
             <span>© 2023 Carma</span>
+        </div>
+        <div class="text">
             <span class="bold">Terms and conditions</span>
             <span class="privacy">Privacy policy</span>
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script>
+    $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > 1) {
+            $('.navbar-section').css({
+                "background-color": "white",
+                "position": "fixed",
+                "top": "0",
+                "width": "100%",
+                "z-index": 99
+            });
+
+            $('.left-part > span').css("color", 'black')
+        } else {
+            $('.navbar-section').css("background-color", '')
+            $('.left-part > span').css("color", 'white')
+        }
+    })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 </html>
